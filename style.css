@@ -14,6 +14,60 @@ li{
     list-style: none;
 }
 
-/* font-family: "Lobster Two", sans-serif; LOGO */
-/* font-family: "Poppins", sans-serif; Normal */
- /* font-family: "Kaushan Script", cursive; Logo(m)*/
+body{
+    font-family: "Poppins", sans-serif; 
+}
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+}
+
+nav ul{
+    gap: 4rem;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+nav .logo span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline:0.4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-family: "Kaushan Script", cursive;
+}
+
+nav .logo a{
+    font-family: "Lobster Two", sans-serif;
+    font-size: 3em;
+}
+
+nav ul li a{
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav .btns{
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-weight: 500;
+}
+
+nav .btns .btn{
+    padding: 0.5rem 1.2rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+
+}

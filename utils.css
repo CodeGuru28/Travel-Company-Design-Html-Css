@@ -1,0 +1,6 @@
+.container{
+    margin-inline: 2rem;
+}
+.flex{
+    display: flex;
+}
