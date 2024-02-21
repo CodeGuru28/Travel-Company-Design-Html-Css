@@ -1,5 +1,5 @@
 .container{
-    margin-inline: 2rem;
+    padding-inline: 2rem;
 }
 .flex{
     display: flex;

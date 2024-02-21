@@ -18,6 +18,13 @@ body{
     font-family: "Poppins", sans-serif; 
 }
 
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
 nav{
     justify-content: space-between;
     align-items: center;
@@ -69,5 +76,117 @@ nav .btns .btn{
     padding: 0.5rem 1.2rem;
     border: 2px solid black;
     border-radius: 0.5rem;
+}
 
+nav .btns i{
+    font-size: 1.5rem;
+}
+
+.hero{
+    height: 140vh;
+    background: url(./imgs/hero\ bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.hero .top{
+    height: 100vh;
+    width: calc(100vw - 8rem);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.hero .top .top1{
+    max-width: 50%;
+}
+
+.hero .top .top1 h1{
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.hero .top .top1 h1 span{
+    color: white;
+}
+
+.hero .top .top2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .top .top2 .right p{
+    max-width: 40rem;
+}
+
+.hero .top .top2 .left{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hero .top .top2 .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hero .top .btns .btn2{
+    background: white;
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.2rem;
+    font-weight: 600;
+}
+
+.hero .top .btns i{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.hero .top .btns .btnSecondary{
+    color: white;
+}
+
+.hero .top .top2 .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.hero .top .top2 .socials i{
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.hero .top .top2 .right{
+    border-left: 1px solid white;
+    padding-left: 2rem;
+    color: rgb(209, 209, 209);
+}
+
+.hero .top .top2 .right h4{
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.hero .top .top2 .right p{
+    font-weight: 200;
+    font-size: 1rem;
 }
