@@ -1,6 +1,109 @@
 /* @media (min-width: 1080px) {
     
 } */
-@media (min-width: 1080px) {
 
+
+@media (max-width: 1230px) {
+    header nav ul{
+        display: none;
+        background-color: #fff;
+    }
+    nav .ham{
+        display: block;
+    }
+    .hero .top .top2 .right p{
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .hero{
+        padding-top: 8rem;
+    }
+    .hero .top .top1{
+        max-width: 30rem;
+    }
+    .hero .top .top2 .left .btns{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    nav .logo{
+        font-size: 0.8rem;
+    }
+    nav .logo span{
+        font-size: 1.3rem;
+    }
+    .hero{
+        padding-top: 10rem;
+    }
+    .hero .top .top2{
+        flex-direction: column;
+        align-items: start;
+    }
+    .hero .top .top2 .left{
+        width: 100%;
+        gap: 2rem;
+    }
+    .hero .top .top2 .left .btns{
+        justify-content: start;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 670px) {
+    .hero{
+        padding-top: 10rem;
+    }
+    .hero .top{
+        gap: 3rem;
+    }
+    .hero .top .top2{
+        flex-direction: column;
+    }
+    .hero .top .top1 h1{
+        font-size: 3rem;
+        line-height: 1.4;
+    }
+    nav .btns :not(:nth-child(4)){
+        display: none;
+    }
+}
+
+@media (max-width: 490px) {
+    .hero{
+        padding-top: 10rem;
+    }
+    .hero .top .top1 h1{
+        font-size: 2.5rem;
+        line-height: 1.4;
+    }
+    .container{
+        padding-inline: 0.8rem;
+    }
+    .hero .top .top2 .left .btns{
+        flex-wrap: wrap;
+    }
+    .hero .top .top2 .left .btns a{
+        font-size: 0.9rem;
+    }
+    .hero .top .top2 .left .btns i{
+        display: none;
+    }
+    .hero .top .btns .btnSecondary{
+        text-decoration: underline;
+    }
+    .hero .top .top2 .left .btns i{
+        font-size: 1.5rem;
+    }
+    .hero .top .top2 .socials i{
+        font-size: 1.5rem;
+    }
+    nav .logo{
+        font-size: 0.6rem;
+    }
+    nav .logo span{
+        font-size: 1rem;
+    }
 }
