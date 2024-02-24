@@ -10,11 +10,11 @@
     <title>Travel Company</title>
 </head>
 <body>
-    <header class="container">
-        <nav>
+    <header class="container header">
+        <nav class="nav">
             <div class="logo">
                 <span>m</span>
-                <a href="#home">Travel</a>
+                <a href="#home" class="logo-text">Travel</a>
             </div>
             <ul >
                 <li><a href="#home">Home</a></li>
@@ -30,9 +30,19 @@
                 <i class='bx bx-menu-alt-right ham'></i>
             </div>
         </nav>
+
+        <nav class="mobile-nav">
+            <ul >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#destination">Destination</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section class="hero container">
+        <section class="hero container" id="home">
             <div class="top">
                 <div class="top1">
                     <h1>Travel Beyond <span>Boundaries</span></h1>
@@ -102,10 +112,11 @@
             </div>
             <div class="gradient"></div>
         </section>
-        <section class="slide1">
+        <section class="slide1" id="services">
             
         </section>
     </main>
     <footer></footer>
+    <script src="./script.js"></script>
 </body>
 </html>

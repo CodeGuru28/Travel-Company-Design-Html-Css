@@ -4,11 +4,11 @@
 
 
 @media (max-width: 1230px) {
-    header nav ul{
+    header .nav ul{
         display: none;
         background-color: #fff;
     }
-    nav .ham{
+    .nav .ham{
         display: block;
     }
     .hero .top .top2 .right p{
@@ -48,14 +48,14 @@
 }
 
 @media (max-width: 720px) {
-    nav .logo{
+    .nav .logo{
         font-size: 0.8rem;
     }
-    nav .logo span{
+    .nav .logo span{
         font-size: 1.3rem;
     }
     .hero{
-        padding-top: 10rem;
+        padding-top: 12rem;
     }
     .hero .top .top2{
         flex-direction: column;
@@ -94,7 +94,7 @@
         font-size: 3rem;
         line-height: 1.4;
     }
-    nav .btns :not(:nth-child(4)){
+    .nav .btns :not(:nth-child(4)){
         display: none;
     }
 }
@@ -128,10 +128,10 @@
     .hero .top .top2 .socials i{
         font-size: 1.5rem;
     }
-    nav .logo{
+    .nav .logo{
         font-size: 0.6rem;
     }
-    nav .logo span{
+    .nav .logo span{
         font-size: 1rem;
     }
 }
@@ -144,6 +144,6 @@
 
 @media only screen and (min-height: 820px) and (max-height: 960px) {
     .hero{
-        padding-top: 1rem;
+        padding-top: 10rem;
     }
   }

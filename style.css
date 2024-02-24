@@ -28,33 +28,40 @@ header{
     top: 0;
     right: 0;
     z-index: 1000;
+    transition: all 0.5s ease-in-out;
 }
 
-nav{
+.nav{
+    position: relative;
+    z-index: 200;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-block: 2rem;
 }
 
-nav ul{
+.color-white{
+    color: white;
+}
+
+.nav ul{
     gap: 4rem;
     display: flex;
 }
 
-nav .ham{
+.nav .ham{
     font-size: 2.5rem !important;
     display: none;
 }
 
-nav .logo{
+.logo{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.2rem;
 }
 
-nav .logo span{
+.nav .logo span{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,20 +73,20 @@ nav .logo span{
     font-family: "Kaushan Script", cursive;
 }
 
-nav .logo a{
+.nav .logo a{
     font-family: "Lobster Two", sans-serif;
     font-size: 3em;
     transition: all 0.3s ease;
 }
 
-nav ul li a{
+.nav ul li a{
     padding: 0.5rem 1.2rem;
     font-size: 0.9rem;
     font-weight: 500;
     transition: all 0.8s ease;
 }
 
-nav .btns{
+.nav .btns{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,14 +94,14 @@ nav .btns{
     font-weight: 500;
 }
 
-nav .btns .btn{
+.nav .btns .btn{
     transition: all 0.3s ease;
     padding: 0.5rem 1.2rem;
     border: 2px solid black;
     border-radius: 0.5rem;
 }
 
-nav .btns i{
+.nav .btns i{
     font-size: 1.5rem;
 }
 
@@ -112,6 +119,60 @@ nav .btns i{
     padding-bottom: 6rem;
     position: relative;
     gap: 4rem;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: rgb(0, 0, 25);
+	padding-top: 120px;
+	transition: 0.4s;
+}
+
+.is-active{
+    left: 0;
+}
+
+.sticking{
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(136, 136, 136, 0.34);
+}
+.sticking2{
+    background: rgba( 247, 240, 240, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.mobile-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mobile-nav li{
+    text-align: center;
+}
+
+.mobile-nav a{
+    display: block;
+    padding: 2rem 3.2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.8s ease;
+    color: #fff;
+    background-color: rgb(33, 33, 33);
+    border-radius: 2rem;
 }
 
 .hero::before{
