@@ -69,8 +69,14 @@
         justify-content: start;
         flex-direction: row;
     }
-    .hero .bottom{
+    .hero .bottom .b2{
         display: none;
+    }
+    .hero .bottom{
+        width: 100%;
+    }
+    .hero .bottom .mobile{
+        display: block;
     }
 }
 

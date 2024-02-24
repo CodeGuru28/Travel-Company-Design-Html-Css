@@ -109,6 +109,7 @@ nav .btns i{
     justify-content: space-between;
     flex-direction: column;
     padding-top: 12rem;
+    padding-bottom: 6rem;
     position: relative;
     gap: 4rem;
 }
@@ -277,7 +278,7 @@ nav .btns i{
     justify-content: center;
 }
 
-.hero .b2 .card{
+.hero .card{
     background-color: #fff;
     padding: 1.5rem 2.2rem;
     display: flex;
@@ -300,8 +301,37 @@ nav .btns i{
     border-bottom-right-radius: 1rem;
 }
 
-.slide1{
-    height: 200vh;
+.hero .mobile .dest{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.hero .mobile .send{
+    padding:1.3rem 2rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.hero .bottom .mobile{
+    display: none;
+    width: 100%;
+}
+
+.gradient{
+    height: 6rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
     background: rgb(2,0,36);
-    background: linear-gradient(to bottom, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(2,0,36,0) 0%, rgba(1,0,29,0.05374649859943981) 21%, rgba(1,0,30,0.38147759103641454) 66%, rgba(1,0,30,0.5579481792717087) 76%, rgba(0,0,0,1) 100%);
+    z-index: 10;
+}
+
+.slide1{
+    background-color: black;
+    height: 200vh;
 }
