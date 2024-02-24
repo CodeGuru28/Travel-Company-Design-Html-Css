@@ -136,7 +136,7 @@
     }
 }
 
-@media only screen and (min-height: 720px) and (max-height: 820px) {
+@media only screen and (min-height: 720px) and (max-height: 820px)  {
     .hero{
         padding-top: 10rem;
     }
