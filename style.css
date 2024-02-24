@@ -99,7 +99,7 @@ nav .btns i{
 }
 
 .hero{
-    height: 140vh;
+    height: 100%;
     background: url(./imgs/hero\ bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -108,8 +108,9 @@ nav .btns i{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 12rem;
     position: relative;
+    gap: 4rem;
 }
 
 .hero::before{
@@ -123,7 +124,7 @@ nav .btns i{
 }
 
 .hero .top{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: start;
@@ -222,4 +223,85 @@ nav .btns i{
     font-weight: 200;
     font-size: 1rem;
     transition: all 1s ease; 
+}
+
+.hero .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    backdrop-filter: blur(5px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(136, 136, 136, 0.34);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.hero .b1{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.hero .b1 h5{
+    padding: 0.5rem 1.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+}
+
+.hero .b1 h5:nth-child(1){
+    color: black;
+    background-color: #fff;
+}
+
+.hero .b2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero .b2 .b2-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .b2 .b2-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .b2 .card{
+    background-color: #fff;
+    padding: 1.5rem 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.hero .b2 .b2-1 .card:first-child{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.hero .b2 .b2-2 .card:last-child{
+    padding:1.3rem 2rem;
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.slide1{
+    height: 200vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(to bottom, rgba(2,0,36,0) 0%, rgba(0,0,0,1) 14%, rgba(0,0,0,1) 100%);
 }

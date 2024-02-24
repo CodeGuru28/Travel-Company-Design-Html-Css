@@ -14,17 +14,36 @@
     .hero .top .top2 .right p{
         max-width: 30rem;
     }
+    .hero .bottom{
+        border-radius: 1rem;
+    }
+    .hero .bottom .b2{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero .b2 .b2-1 .card:last-child{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    
+    .hero .b2 .b2-2 .card:first-child{
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
 }
 
 @media (max-width: 1080px) {
-    .hero{
-        padding-top: 8rem;
-    }
     .hero .top .top1{
         max-width: 30rem;
     }
     .hero .top .top2 .left .btns{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 860px) {
+    .hero .bottom .b2 .card span{
+        font-size: 0.8rem;
     }
 }
 
@@ -49,6 +68,9 @@
     .hero .top .top2 .left .btns{
         justify-content: start;
         flex-direction: row;
+    }
+    .hero .bottom{
+        display: none;
     }
 }
 
@@ -108,7 +130,7 @@
     }
 }
 
-@media only screen and (min-height: 620px) and (max-height: 820px) {
+@media only screen and (min-height: 720px) and (max-height: 820px) {
     .hero{
         padding-top: 3rem;
     }
