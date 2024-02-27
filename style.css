@@ -134,6 +134,11 @@ header{
 	transition: 0.4s;
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
+
 .is-active{
     left: 0;
 }

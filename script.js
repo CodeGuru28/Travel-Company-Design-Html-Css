@@ -54,15 +54,44 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   
-window.onload = function () {
+  window.onload = function () {
     const menu_btn = document.querySelector('.ham');
     const logo = document.querySelector('.logo-text');
-	const mobile_menu = document.querySelector('.mobile-nav');
+    const mobile_menu = document.querySelector('.mobile-nav');
+    const body = document.querySelector('body'); // Select the body element
 
-	menu_btn.addEventListener('click', function () {
-		menu_btn.classList.toggle('is-active');
-		mobile_menu.classList.toggle('is-active');
-		menu_btn.classList.toggle('color-white');
-		logo.classList.toggle('color-white');
-	});
-}
+    menu_btn.addEventListener('click', function () {
+        menu_btn.classList.toggle('is-active');
+        mobile_menu.classList.toggle('is-active');
+        menu_btn.classList.toggle('color-white');
+        logo.classList.toggle('color-white');
+
+        // Toggle body class for scrolling lock
+        body.classList.toggle('scroll-lock');
+    });
+
+    // Select all anchor tags inside the mobile navbar
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+    // Add click event listener to each anchor tag
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            // Toggle off the mobile navbar
+            menu_btn.classList.remove('is-active');
+            mobile_menu.classList.remove('is-active');
+            menu_btn.classList.remove('color-white');
+            logo.classList.remove('color-white');
+            body.classList.remove('scroll-lock');
+
+            // Get the href attribute of the clicked anchor tag
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            // Scroll to the target section
+            if (targetElement) {
+                event.preventDefault(); // Prevent default anchor tag behavior
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+};
