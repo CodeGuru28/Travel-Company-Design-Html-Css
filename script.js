@@ -94,4 +94,54 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    
 };
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true, // Enable looping
+  autoplay: {
+    delay: 2000, // Change delay value (in milliseconds) as needed
+    disableOnInteraction: false, // Prevent autoplay from stopping on user interaction
+  },
+  // effect: "fade", // Change the slide transition effect to fade
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // Add responsive breakpoints
+  breakpoints: {
+    // When window width is <= 300px
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    // When window width is <= 600px
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // When window width is <= 991px
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // When window width is <= 1199px
+    1199: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+    // Add more breakpoints as needed
+  },
+});
+
+// Add event listeners for custom navigation buttons
+document.querySelector(".custom-prev-button").addEventListener("click", function () {
+  swiper.slidePrev();
+});
+
+document.querySelector(".custom-next-button").addEventListener("click", function () {
+  swiper.slideNext();
+});
+

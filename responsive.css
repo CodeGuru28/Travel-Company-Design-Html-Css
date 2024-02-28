@@ -30,14 +30,40 @@
         border-top-left-radius: 1rem;
         border-bottom-left-radius: 1rem;
     }
+    .slide1{
+        flex-direction: column-reverse;
+    }
+    .content{
+        width: 90vw;
+        gap: 0;
+    }
+    .content .text p{
+        max-width: 60vw;
+    }
+    .content .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .arrows{
+        margin-top: 0;
+        display: none;
+    }
 }
 
 @media (max-width: 1080px) {
+    .nav{
+        padding-block: 1.2rem;
+    }
     .hero .top .top1{
         max-width: 30rem;
     }
     .hero .top .top2 .left .btns{
         flex-direction: column;
+    }
+    .swiper-slide .desc{
+        font-size: 0.8rem;
     }
 }
 
@@ -97,6 +123,31 @@
     .nav .btns :not(:nth-child(4)){
         display: none;
     }
+    .content .wrapper{
+        align-items: start;
+        flex-direction: column;
+    }
+    .content .text h2{
+        font-size: 2.2rem;
+    }
+    .content .text p{
+        max-width: 100%;
+    }
+    .content .counts{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .content .counts .count{
+        width: fit-content;
+        gap: 1rem;
+    }
+    .content .btn2{
+        display: none;
+    }
 }
 
 @media (max-width: 490px) {
@@ -132,6 +183,16 @@
         font-size: 0.6rem;
     }
     .nav .logo span{
+        font-size: 1rem;
+    }
+    .swiper-slide .top{
+        height: 20rem;
+    }
+    .count p{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .count span{
         font-size: 1rem;
     }
 }
