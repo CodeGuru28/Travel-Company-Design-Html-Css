@@ -1,16 +1,3 @@
-// const primaryHeader = document.querySelector('.header');
-// const scrollWatcher = document.createElement('div');
-
-// scrollWatcher.setAttribute('data-scroll-watcher', '');
-// primaryHeader.before(scrollWatcher);
-
-
-// const navObserver = new IntersectionObserver((entries) =>{
-// 	primaryHeader.classList.toggle('sticking', !entries[0].isIntersecting)
-// });
-
-// navObserver.observe(scrollWatcher);
-
 document.addEventListener('DOMContentLoaded', function() {
 	const header = document.querySelector('.header');
 	const heroSection = document.querySelector('.hero');
@@ -22,18 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	  const scrollPosition = window.scrollY;
 	  const heroSectionOffsetTop = heroSection.offsetTop;
 	  const slide1SectionOffsetTop = slide1Section.offsetTop;
-  
-	//   if (scrollPosition >= slide1SectionOffsetTop) {
-	// 	// Apply white color to anchor tags when scrolled to slide1 section
-	// 	navLinks.forEach(link => {
-	// 	  link.style.color = 'white';
-	// 	});
-	//   } else {
-	// 	// Reset anchor tag color when not scrolled to slide1 section
-	// 	navLinks.forEach(link => {
-	// 	  link.style.color = ''; // Reset to default color
-	// 	});
-	//   }
   
 	  // Update header class based on scroll position
 	  if (scrollPosition === 0) {

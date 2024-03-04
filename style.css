@@ -103,6 +103,11 @@ header{
     border-radius: 0.5rem;
 }
 
+.nav .btns .btn:hover{
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
 .nav .btns i{
     font-size: 1.5rem;
 }
@@ -328,6 +333,12 @@ header{
     padding: 0.5rem 1.4rem;
     border-radius: 0.2rem;
     font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.btn2:hover{
+    background-color: #ececec;
+    border: none;
 }
 
 .hero .top .btns i{
