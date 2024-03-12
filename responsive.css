@@ -50,6 +50,9 @@
         margin-top: 0;
         display: none;
     }
+    .services{
+        padding-inline: 2rem;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -65,11 +68,31 @@
     .swiper-slide .desc{
         font-size: 0.8rem;
     }
+    .service{
+        flex-direction: column-reverse;
+    }
+    .service .right{
+        max-height: 20rem;
+        min-width: 100%;
+    }
+    .service .right img{
+        max-height: 20rem;
+    }
+    .services .heading h5{
+        white-space: wrap;
+    }
+    
+    .line{
+        display: none;
+    }
 }
 
 @media (max-width: 860px) {
     .hero .bottom .b2 .card span{
         font-size: 0.8rem;
+    }
+    .service-card h5{
+        font-size: 2.2rem;
     }
 }
 
@@ -148,6 +171,10 @@
     .content .btn2{
         display: none;
     }
+    .service-card p{
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 490px) {
@@ -194,6 +221,9 @@
     }
     .count span{
         font-size: 1rem;
+    }
+    .service-card h5{
+        font-size: 1.6rem;
     }
 }
 

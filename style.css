@@ -17,7 +17,8 @@ li{
 }
 
 body{
-    background-color: black;;
+    background-color: black;
+    color: #fff;
     font-family: "Poppins", sans-serif; 
 }
 
@@ -111,6 +112,7 @@ header{
 
 .nav .btns i{
     font-size: 1.5rem;
+    color: #000;
 }
 
 .hero{
@@ -298,6 +300,7 @@ header{
     transition: all 0.2s ease; 
     font-size: 4rem;
     line-height: 5rem;
+    color: #000;
 }
 
 .hero .top .top1 h1 span{
@@ -327,6 +330,7 @@ header{
     justify-content: center;
     gap: 2rem;
     width: 100%;
+    color: #000;
 }
 
 .btn2{
@@ -335,6 +339,8 @@ header{
     border-radius: 0.2rem;
     font-weight: 600;
     transition: all 0.5s ease;
+    color: #000;
+    cursor: pointer;
 }
 
 .btn2:hover{
@@ -446,6 +452,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 0.3rem;
+    color: #000;
 }
 
 .hero .b2 .b2-1 .card:first-child{
@@ -748,3 +755,101 @@ header{
     .count span{
         justify-self: end ;
     }
+
+.services{
+    margin-top: 5rem;
+    padding-inline: 5rem;
+}
+
+.services .heading{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.services .heading h5{
+    font-size: 2rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.services .line{
+    height: 1px;
+    background-color: #fff;
+    width: 45%;
+}
+
+.services .service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
+.service .right{
+    max-width: 35rem;
+    background-image: url(./img/mountains\ lake2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.service .right img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service .left{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.service .service-card{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.service-card h5{
+    cursor: pointer;
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.service-card p{
+    font-size: 1rem;
+    font-weight: 300;
+    color:#d9d9d9 ;
+    margin-bottom: 1rem;
+}
+
+.service-card:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.service-card:hover .btn2{
+    background-color: #343434;
+    color: #fff;
+}
+
+.service-card:hover .p{
+    color: #868686;
+}
+
+.service-card .btn2{
+    align-self: flex-end;
+}
