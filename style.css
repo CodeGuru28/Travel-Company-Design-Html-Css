@@ -763,3 +763,83 @@ header{
 .service-card .btn2{
     align-self: flex-end;
 }
+
+
+.contact{
+    margin-top: 5rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.wrap::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    inset: 0;
+}
+
+.contact .wrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 96vw;
+    min-height: 50vh;
+    margin-inline: auto;
+    text-align: center;
+    gap: 2rem;
+    background-image: url(./img/hero\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.wrap .heading-contact{
+    z-index: 5;
+    width: 50%;
+}
+
+.wrap h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.wrap .mail{
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mail-inp{
+    width: 55vw;
+    height: 3.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    background: rgba( 255, 255, 255, 0.22);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+.send-mail{
+    padding: 0.8rem 2.8rem;
+    background-color: #000;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+
+.mail-inp::placeholder{
+    color: #b2b2b2;
+    font-size: 1rem;
+    font-weight: 500;
+}

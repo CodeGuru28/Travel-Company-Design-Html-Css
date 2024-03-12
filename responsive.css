@@ -81,9 +81,11 @@
     .services .heading h5{
         white-space: wrap;
     }
-    
     .line{
         display: none;
+    }
+    .wrap h3{
+        font-size: 1.6rem;
     }
 }
 
@@ -93,6 +95,10 @@
     }
     .service-card h5{
         font-size: 2.2rem;
+    }
+    .wrap .heading-contact{
+        width: 100%;
+        padding-inline: 1rem;
     }
 }
 
@@ -224,6 +230,18 @@
     }
     .service-card h5{
         font-size: 1.6rem;
+    }
+    .wrap h3{
+        font-size: 1.2rem;
+    }
+    .wrap .mail{
+        flex-direction: column;
+    }
+    .send-mail{
+        width: 100%;
+    }
+    .mail-inp{
+        width: 100%
     }
 }
 
